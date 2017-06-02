@@ -24,7 +24,8 @@ const webpackConfig = {
                 exclude: [/node_modules/]
             }
         ]
-    }
+    },
+    devtool: 'cheap-module-eval-source-map',
 }
 
 module.exports = webpackConfig;

@@ -8,12 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mvpdw06/React-Redux-rocket.git"
+    "url": "git+https://github.com/GraceLee-Xuenn/homework.git"
   },
-  "author": "RyanHsu",
+  "author": "GraceLee",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mvpdw06/React-Redux-rocket/issues"
-  },
-  "homepage": "https://github.com/mvpdw06/React-Redux-rocket#readme"
 }

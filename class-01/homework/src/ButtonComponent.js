@@ -7,19 +7,9 @@ class ButtonComponent extends Component {
     render() {
         return (
             <div>
-               <button type="button" style={{width:"25px"}} onClick={this.compute.bind(null, this.props.valName, this.props.paraObj)}>{this.props.valName}</button>
+               <button type="button" style={{width:"25px"}} onClick={() => this.props.compute(this.props.valName)}>{this.props.valName}</button>
             </div>
         )
-    }
-    compute(op, para){
-        var input1 = document.getElementById(para.input1).value=="" ? 0 : parseInt(document.getElementById(para.input1).value);
-        var input2 = document.getElementById(para.input2).value=="" ? 0 : parseInt(document.getElementById(para.input2).value);
-        var val = document.getElementById(para.value);
-        if(op=='+'){
-            val.innerHTML=input1+input2;
-        }else{
-            val.innerHTML=input1-input2;
-        }
     }
 }
 

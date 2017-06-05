@@ -5,17 +5,15 @@ class InputComponent extends Component {
         super(props);
     }
     render() {
+        var val = this.props.value;
         return (
             <div>
-               <input type="text" id={this.props.idName}></input>
-               <button type="button" onClick={this.keyVal.bind(null, this.props.idName, 1)}>1</button>
-               <button type="button" onClick={this.keyVal.bind(null, this.props.idName, 2)}>2</button>
-               <button type="button" onClick={this.keyVal.bind(null, this.props.idName, 3)}>3</button>
+               <input type="text" value={this.props.value}></input>
+               <button type="button" onClick={() => this.props.keyVal(this.props.name, 1)}>1</button>
+               <button type="button" onClick={() => this.props.keyVal(this.props.name, 2)}>2</button>
+               <button type="button" onClick={() => this.props.keyVal(this.props.name, 3)}>3</button>
             </div>
         )
-    }
-    keyVal(idName, v){
-        document.getElementById(idName).value += v;
     }
 }
 

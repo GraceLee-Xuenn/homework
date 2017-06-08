@@ -53,7 +53,6 @@ class App extends Component {
         var newLogData = this.state.logData;
         newLogData[data.index].isDelete = !data.isDelete;
         this.setState({value: val, logData: newLogData});
-
     }
 }
 

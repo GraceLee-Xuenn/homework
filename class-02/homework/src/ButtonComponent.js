@@ -1,9 +1,9 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 const ButtonComponent = (props) => {
     return (
         <div>
-            <button type="button" style={{width:"25px"}} onClick={() => props.compute(props.valName)}>{props.valName}</button>
+            <button type="button" style={{ width:"25px" }} onClick={ () => props.compute(props.valName) }>{ props.valName }</button>
         </div>
     )
 }

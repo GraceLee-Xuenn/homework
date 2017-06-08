@@ -9,7 +9,8 @@ class App extends Component {
         this.state = {num: 0, value: 0, logData: []};
     }
     render() {
-        const logList = this.state.logData.map((data, index) => {
+        const { logData } = this.state;
+        const logList = logData.map((data, index) => {
             data.index = index;
             return <LogComponent key={ index } data={ data } revertData={ this.revertData }/>
         })

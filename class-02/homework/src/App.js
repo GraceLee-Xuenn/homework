@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import NumComponent from './NumComponent';
 import ButtonComponent from './ButtonComponent';
 import LogComponent from './LogComponent';

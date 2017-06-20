@@ -1,0 +1,9 @@
+const ActionType = {
+    KEYVAL: 'KEYVAL',
+    COMPUTE: 'COMPUTE',
+    REVERTDATA: 'REVERTDATA',
+    FETCHDATA: 'FETCHDATA',
+    FETCHDATASUCCESS: 'FETCHDATASUCCESS'
+}
+
+module.exports = ActionType;

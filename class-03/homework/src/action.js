@@ -8,7 +8,7 @@ import {
 
 const action = {
     keyVal: (num) => ({ type: KEYVAL, num }),
-    compute: (op) => ({ type: COMPUTE, op: op }),
+    compute: (op) => ({ type: COMPUTE, op }),
     revertData: (data) => ({ type: REVERTDATA, data }),
     fetchData() {
         return (dispatch) => {
